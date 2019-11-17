@@ -33,16 +33,16 @@ Over to Google Colab:
 1. Run the "yolov3_traffic_lights.ipynb" in the Google Colab Notebock environment with GPU runtime type.
 2. You would be asked to mount yout Google Drive. Please do so.
 3. After the execution completes; you should see darknet_linux folder in your Google Drive.
-4. Now copy the "darknet/yolov3_traffic_lights.cfg" from this repo to <<GOOGLE DRIVE>>/darknet_linux/.
-5. Now copy the "darknet/obj.data" from the repo to <<GOOGLE DRIVE>>/darknet_linux/.
-6. Now copy the "darknet/obj.names" from the repo to <<GOOGLE DRIVE>>/darknet_linux/.
-7. Now copy the "darknet/data/train.txt" from the repo to <<GOOGLE DRIVE>>/darknet_linux/data/.
-8. Create a directory called "obj" under <<GOOGLE DRIVE>>/darknet_linux/data/.
-9. Copy all the .txt label files of the training images from your PC to <<GOOGLE DRIVE>>/darknet/data/obj.
-10. Copy all the training .png images to <<GOOGLE DRIVE>>/darknet/data/obj
+4. Now copy the "darknet/yolov3_traffic_lights.cfg" from this repo to <GOOGLE DRIVE>/darknet_linux/.
+5. Now copy the "darknet/obj.data" from the repo to <GOOGLE DRIVE>/darknet_linux/.
+6. Now copy the "darknet/obj.names" from the repo to <GOOGLE DRIVE>/darknet_linux/.
+7. Now copy the "darknet/data/train.txt" from the repo to <GOOGLE DRIVE>/darknet_linux/data/.
+8. Create a directory called "obj" under <GOOGLE DRIVE>/darknet_linux/data/.
+9. Copy all the .txt label files of the training images from your PC to <GOOGLE DRIVE>/darknet/data/obj.
+10. Copy all the training .png images to <GOOGLE DRIVE>/darknet/data/obj
   
 Running training in Google Colab manually:
-1. Run the followng command to train using darknet in Google Colab prompt. "cd" to <<GOOGLE DRIVE>>/darknet_linux.
+1. Run the followng command to train using darknet in Google Colab prompt. "cd" to <GOOGLE DRIVE>/darknet_linux.
   "!./darknet detector train obj.data yolov3_traffic_lights.cfg darknet53.conv.74 -dont_show"
   
-This should create the .weights file under <<GOOGLE DRIVE>>/darknet_linux/backup
+This should create the .weights file under <GOOGLE DRIVE>/darknet_linux/backup
