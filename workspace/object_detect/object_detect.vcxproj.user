@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>-@alias=small -input=D:\object_detection\train_rgb\rgb\train -model=D:\object_detection\yolov3_traffic_lights_last.weights -config=D:\object_detection\darknet\yolov3_traffic_lights.cfg -classes=D:\object_detection\darknet\obj.names -backend=3 -target=0 --scale=0.00392 -width=416 -height=416</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
