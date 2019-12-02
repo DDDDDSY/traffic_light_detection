@@ -46,3 +46,21 @@ Running training in Google Colab manually:
   "!./darknet detector train obj.data yolov3_traffic_lights.cfg darknet53.conv.74 -dont_show"
   
 This should create the .weights file under <GOOGLE DRIVE>/darknet_linux/backup
+  
+How to test this weight files?
+1. This repo also has a folder called "workspace". This folder has a VS2015 project which extends the OpenCV "object_detection" sample to read images recursively from a folder and use YOLOv3 for object detection.
+2. Checkout the sample project and update the following project settings as per your development environment. Need opencv development environment as pre-requisite.
+a) Add additional include directories to opencv include directory.
+b) Add additional lib directories to opencv lib directory.
+c) Ensure the path to opencv dll files are added to the global environment path variable.
+d) Update the startup command line arguments to reflect the path to the argument based on your development environment.
+Eg:
+-@alias=small -input=D:\object_detection\train_rgb\rgb\train -model=D:\object_detection\yolov3_traffic_lights_last.weights -config=D:\object_detection\darknet\yolov3_traffic_lights.cfg -classes=D:\object_detection\darknet\obj.names -backend=3 -target=0 --scale=0.00392 -width=416 -height=416
+
+-input - This is that path to the test image files
+-model - This is the path to the YOLOv3 weight files generated after training.
+-config - This is the path to YOLOv3 cfg files used during training.
+-classes - This is the path to the list of object class names used during training. 
+
+d) Restart the visual studio and rebuild.
+e) Happy Testing!
