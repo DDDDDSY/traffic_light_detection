@@ -56,6 +56,7 @@ How to test this weight files?
 6. Update the startup command line arguments to reflect the path to the argument based on your development environment.
   
 Example:
+
 -@alias=small -input=D:\object_detection\train_rgb\rgb\train -model=D:\object_detection\yolov3_traffic_lights_last.weights -config=D:\object_detection\darknet\yolov3_traffic_lights.cfg -classes=D:\object_detection\darknet\obj.names -backend=3 -target=0 --scale=0.00392 -width=416 -height=416
 
 -input - This is that path to the test image files
