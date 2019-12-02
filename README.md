@@ -59,8 +59,11 @@ Example:
 -@alias=small -input=D:\object_detection\train_rgb\rgb\train -model=D:\object_detection\yolov3_traffic_lights_last.weights -config=D:\object_detection\darknet\yolov3_traffic_lights.cfg -classes=D:\object_detection\darknet\obj.names -backend=3 -target=0 --scale=0.00392 -width=416 -height=416
 
 -input - This is that path to the test image files
+
 -model - This is the path to the YOLOv3 weight files generated after training.
+
 -config - This is the path to YOLOv3 cfg files used during training.
+
 -classes - This is the path to the list of object class names used during training. 
 
 7) Restart the visual studio and rebuild.
