@@ -50,10 +50,10 @@ This should create the .weights file under <GOOGLE DRIVE>/darknet_linux/backup
 How to test this weight files?
 1. This repo also has a folder called "workspace". This folder has a VS2015 project which extends the OpenCV "object_detection" sample to read images recursively from a folder and use YOLOv3 for object detection.
 2. Checkout the sample project and update the following project settings as per your development environment. Need opencv development environment as pre-requisite.
-2.1. Add additional include directories to opencv include directory.
-2.2. Add additional lib directories to opencv lib directory.
-2.3. Ensure the path to opencv dll files are added to the global environment path variable.
-2.4. Update the startup command line arguments to reflect the path to the argument based on your development environment.
+3. Add additional include directories to opencv include directory.
+4. Add additional lib directories to opencv lib directory.
+5. Ensure the path to opencv dll files are added to the global environment path variable.
+6. Update the startup command line arguments to reflect the path to the argument based on your development environment.
   
 Example:
 -@alias=small -input=D:\object_detection\train_rgb\rgb\train -model=D:\object_detection\yolov3_traffic_lights_last.weights -config=D:\object_detection\darknet\yolov3_traffic_lights.cfg -classes=D:\object_detection\darknet\obj.names -backend=3 -target=0 --scale=0.00392 -width=416 -height=416
@@ -63,5 +63,5 @@ Example:
 -config - This is the path to YOLOv3 cfg files used during training.
 -classes - This is the path to the list of object class names used during training. 
 
-3) Restart the visual studio and rebuild.
-4) Happy Testing!
+7) Restart the visual studio and rebuild.
+8) Happy Testing!
